@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiply Numbers</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<button onclick="multiplyNumbers()">Multiply Numbers</button>
+	<div id="result"></div>
+    <script>
+		function multiplyNumbers() {
+			// Get the user input
+			let num1 = prompt("Enter the first number:");
+			let num2 = prompt("Enter the second number:");
+			let num3 = prompt("Enter the third number:");
+
+			// Multiply the numbers together
+			let result = num1 * num2 * num3;
+
+			// Display the equation and the result on the screen
+			let equation = `${num1} x ${num2} x ${num3} = ${result}`;
+			document.getElementById("result").innerHTML = equation;
+		}
+	</script>
+</body>
+</html>
